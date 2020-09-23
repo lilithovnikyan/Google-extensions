@@ -1,0 +1,245 @@
+html, body, p, h1, h2, h3, h4, ul {
+  margin: 0;
+  padding: 0;
+}
+input, button {
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+button:hover {
+  outline: none;
+  cursor: pointer;
+}
+a, a:hover {
+  text-decoration: none;
+}
+button:active, button:focus {
+  outline: none !important;
+}
+li {
+  padding: 0;
+  list-style-type: none;
+}
+body {
+  max-width: 640px;
+  margin: 100px auto;
+  padding-bottom: 30px;
+  -webkit-box-shadow: 0px 2px 44px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 44px -12px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 44px -12px rgba(0,0,0,0.75);
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid silver;
+  align-items: center;
+}
+header a img {
+  width: 60%;
+}
+header a:last-child img {
+  opacity: 0.5;
+}
+header a {
+  height: 100px;
+  display: flex;
+  border-right: 1px solid #343a40;
+  align-items: center;
+  justify-content: center;
+}
+header a:last-child {
+  border-right: 0;
+}
+header div:hover {
+  cursor: pointer;
+}
+.content {
+  max-width: 590px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content-title {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  font-family: "SourceSansPro-Semibold";
+  color: #000;
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+}
+.content select {
+  -webkit-appearance: none;
+  font-size: 16px;
+  color: black;
+  line-height: 33px;
+  font-family: "OpenSans-Light";
+  width: 484px;
+  border-radius: 8px;
+  height: 60px;
+  border: solid 1px black;
+  margin: 0 auto;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.content select:focus {
+  border: solid 1px black;
+  box-shadow: none;
+  outline: 0;
+}
+.content input {
+  font-size: 16px;
+  color: black;
+  line-height: 33px;
+  font-family: "OpenSans-Light";
+  width: 484px;
+  border-radius: 5px;
+  height: 60px;
+  border: solid 1px black;
+  margin: 0 auto;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.brain-logo {
+  margin: 30px 0;
+  width: 175px;
+}
+.brain-logo img {
+  width: 100%;
+}
+.login-btn {
+  width: 261px;
+  height: 75px;
+  border-radius: 10px;
+  border: solid 1px #d0d0d0;
+  background-color: #159EF7;
+  display: flex;
+  color: #fff !important;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 130px;
+  font-family: "SourceSansPro-Semibold";
+}
+.login-btn:hover {
+  cursor: pointer !important;
+}
+.over-btn:hover {
+  cursor: pointer !important;
+}
+.over-btn {
+  position: absolute;
+  width: 244px;
+  height: 90px;
+  border-radius: 10px;
+  border: solid 1px #d0d0d0;
+  left: 8px;
+  top: 34px;
+}
+footer {
+  max-width: 650px;
+  margin: 0 auto;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer ul li {
+  border-right: 1px solid #597ed6;
+  padding: 0 25px;
+}
+footer ul li:last-child {
+  border-right: none;
+}
+footer ul li a {
+  font-family: "SourceSansPro-Semibold";
+  color: #0490EA !important;
+  font-size: 18px;
+}
+footer ul li:hover {
+  cursor: pointer;
+}
+.select-img {
+  pointer-events: none;
+  position: absolute;
+  right: 66px;
+  top: 28px;
+  width: 15px;
+}
+.select-block {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.login-btn:focus {
+  background: #4fd361;
+}
+
+
+
+@media (max-width: 767px) {
+  .content select {
+    width: 80%;
+  }
+  .content input {
+    width: 80%;
+  }
+  .content-title {
+    font-size: 38px;
+  }
+  footer ul li {
+     padding: 0 15px;
+   }
+}
+
+@media (max-width: 480px) {
+  .content-title {
+    font-size: 24px;
+    padding-top: 0;
+  }
+  .brain-logo {
+    width: 125px;
+  }
+  .select-block {
+    width: auto;
+  }
+  footer ul li a {
+    font-size: 16px;
+  }
+  footer ul li {
+    border-right: 0;
+    border-bottom: 1px solid #597ed6;
+    margin-bottom: 5px;
+  }
+  .login-btn {
+    width: 220px;
+    height: 60px;
+    margin-bottom: 48px;
+  }
+  .over-btn {
+    width: 220px;
+    height: 60px;
+  }
+  .select-img {
+    right: 13px;
+  }
+  .content select {
+    width: 295px;
+    font-size: 13px;
+  }
+  .content input {
+    width: 295px;
+    font-size: 13px;
+  }
+  footer ul {
+    flex-direction: column;
+  }
+}
+

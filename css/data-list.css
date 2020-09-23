@@ -1,0 +1,213 @@
+html, body, p, h1, h2, h3, h4, ul {
+    margin: 0;
+    padding: 0;
+}
+input, button {
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+button:hover {
+    outline: none;
+    cursor: pointer;
+}
+a, a:hover {
+    text-decoration: none;
+}
+button:active, button:focus {
+    outline: none !important;
+}
+li {
+    padding: 0;
+    list-style-type: none;
+}
+.data-list-header {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #626262;
+}
+.data-list-header img {
+    width: 160px;
+}
+.btns-block {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.btn-download {
+    width: 184px;
+    height: 40px;
+    border: solid 1px #d0d0d0;
+    background-color: #000;
+    display: flex;
+    color: #fff !important;
+    transition: 0.5s ease-in-out;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    font-family: "SourceSansPro-Semibold";
+}
+.btn-download:hover {
+    cursor: pointer;
+    background: #000000b5;
+}
+.btn-push {
+    width: 222px;
+    height: 40px;
+    border: solid 1px #d0d0d0;
+    background-color: #52ac62;
+    display: flex;
+    color: #fff !important;
+    transition: 0.5s ease-in-out;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    font-family: "SourceSansPro-Semibold";
+}
+.btn-push:hover {
+    cursor: pointer;
+    background: #388846;
+}
+.btn-clear {
+    width: 152px;
+    height: 40px;
+    border: solid 1px #d0d0d0;
+    background-color: #888888;
+    display: flex;
+    color: #fff !important;
+    transition: 0.5s ease-in-out;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    font-family: "SourceSansPro-Semibold";
+}
+.btn-clear:hover {
+    cursor: pointer;
+    background: #5d5a5a;
+}
+.btn-open {
+    width: 222px;
+    height: 40px;
+    border: solid 1px #d0d0d0;
+    background-color: #acacac;
+    display: flex;
+    color: #414141 !important;
+    transition: 0.5s ease-in-out;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    font-family: "SourceSansPro-Semibold";
+}
+.btn-open:hover {
+    cursor: pointer;
+    background: #acacac73;
+}
+.select-group {
+    width: 307px;
+    height: 40px;
+    padding-left: 40px;
+    border: solid 1px #000;
+    background-color: #fff;
+    display: flex;
+    color: #292929 !important;
+    transition: 0.5s ease-in-out;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    font-family: "SourceSansPro-Semibold";
+}
+.select-group:hover {
+    cursor: pointer;
+}
+table tr:first-child {
+    border: 1px solid #000;
+}
+table th {
+    border: 1px solid #000;
+    text-align: center;
+    font-family: "SourceSansPro-Semibold";
+    color: #292929;
+    font-size: 18px;
+    padding: 0 15px;
+    height: 60px;
+}
+table td {
+    padding: 15px 20px;
+    font-family: "OpenSans-Light";
+    color: #292929;
+    font-size: 14px;
+    border-left: 1px solid #e8e8e8;
+    line-height: 24px;
+}
+.w-135 {
+    width: 135px;
+}
+.w-200 {
+    width: 200px;
+}
+.w-150 {
+    width: 150px;
+}
+.w-300 {
+    width: 300px;
+}
+
+
+@media (max-width: 1400px) {
+    .table-data {
+        overflow-x: auto;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 1200px) {
+    .select-group,
+    .btn-open,
+    .btn-clear,
+    .btn-push,
+    .btn-download {
+        width: 196px;
+    }
+}
+@media (max-width: 992px) {
+    .btns-block {
+        flex-direction: column;
+    }
+    .select-group,
+    .btn-open,
+    .btn-clear,
+    .btn-push,
+    .btn-download {
+        margin-top: 20px;
+        width: 300px;
+    }
+    table th {
+        font-size: 14px;
+        padding: 0 6px;
+    }
+    table td {
+        padding: 9px 6px;
+    }
+}
+@media (max-width: 480px) {
+    .select-group,
+    .btn-open,
+    .btn-clear,
+    .btn-push,
+    .btn-download {
+        width: 100%
+    }
+    .btns-block {
+        padding: 0 10px;
+    }
+    .select-group {
+        padding-left: 10px;
+    }
+}
